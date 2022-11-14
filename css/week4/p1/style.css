@@ -1,0 +1,11 @@
+h1,h2{
+    background-color:#0000ff;
+    color:white;
+}
+
+p{
+    color:navy;
+}
+blockquote{
+    background-color:rgb(200,200,200)
+}

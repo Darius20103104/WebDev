@@ -1,0 +1,41 @@
+html {
+    background-color: dimgrey;
+    color:ghostwhite;
+}
+
+p {
+    text-align: center;
+}
+
+.img {
+    position: absolute;
+    left:50%;
+    width: 100%;
+}
+
+.dtext {
+    position: absolute;
+    left:5%;
+}
+
+.desc {
+    display: inline-block;
+    width: 42%;
+    color: darkorange;
+}
+
+
+a {
+    color: darkturquoise;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: coral;
+    text-decoration: underline;
+}
+a:active {
+    color: palevioletred;
+    background-color: darkslategray;
+}

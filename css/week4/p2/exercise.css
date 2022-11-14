@@ -1,0 +1,24 @@
+body{
+    background-color:#e0ffff;
+    color:navy;
+    font-family:serif;
+}
+
+h3{
+    background-color:blue;
+    color:white;
+    font-size:18px italic underline;
+}
+
+p{
+    font-family:sans-serif 14px;
+    color:#00080;
+}
+
+address{
+    font-size:110%;
+}
+
+blockquote{
+    text-transform: uppercase center;
+}

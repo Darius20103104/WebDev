@@ -1,0 +1,46 @@
+.div2 {
+    background-color: #001101;
+}
+
+.div2 > p,h1 {
+    color:ghostwhite;
+}
+
+body {
+    text-align: center;
+    background-image: url('../../img/perosnal/computer/matrix.webp');
+}
+
+
+h1 {
+    top: 10px;
+    left: 15%;
+    font-size: 100%;
+}
+
+div {
+    position: absolute;
+    left:12.5%;
+    width: 75%;
+    height: auto;
+}
+
+a {
+    color: darkturquoise;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: coral;
+    text-decoration: underline;
+}
+a:active {
+    color: palevioletred;
+    background-color: darkslategray;
+}
+
+.deny {
+    text-decoration: line-through;
+    color: beige;
+}
