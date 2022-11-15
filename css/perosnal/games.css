@@ -39,3 +39,17 @@ a:active {
     color: palevioletred;
     background-color: darkslategray;
 }
+
+nav {
+    text-align: center;
+}
+
+#footer2 {
+    color: cadetblue;
+    font-size: 50%;
+}
+
+figcaption {
+    font-size: 75%;
+    color: beige;
+}

@@ -44,3 +44,23 @@ a:active {
     text-decoration: line-through;
     color: beige;
 }
+
+#niceyellow {
+    color: #FFE7D7;
+    font-size: 120%;
+}
+#footer {
+    color: #37611F;
+    font-size: 50%;
+}
+
+#image {
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+#figtext {
+    padding-bottom: 4%;
+    font-size: 80%;
+    color: floralwhite;
+}
