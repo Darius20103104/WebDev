@@ -53,3 +53,12 @@ figcaption {
     font-size: 75%;
     color: beige;
 }
+
+th,td {
+    border-color: whitesmoke;
+    border-bottom-style: groove;
+}
+
+table {
+    border-top-style: double;
+}
