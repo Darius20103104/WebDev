@@ -62,3 +62,7 @@ th,td {
 table {
     border-top-style: double;
 }
+
+nav {
+    background-color: grey;
+}
