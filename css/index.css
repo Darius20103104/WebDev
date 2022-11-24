@@ -1,0 +1,20 @@
+html {
+    background-color: #5A5A5A;
+    color:floralwhite;
+    text-align: center;
+}
+
+a {
+    color: darkturquoise;
+}
+a:visited {
+    color: coral;
+    text-decoration: underline;
+}
+a:active {
+    color: palevioletred;
+    background-color: darkslategray;
+}
+a:hover {
+    color: #FF2626;
+}
