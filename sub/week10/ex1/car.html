@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>Car Booking</title>
+  <style>
+  .ui.container {
+    border: solid black 1px;
+	margin-top:2em;
+	}
+	
+	h1, h2, figcaption {
+	   color: blue;
+	}
+	
+	.ui.form .inline.field > label, .ui.form .field  label, p {
+	  color: #0384fc;
+	  font-size:1.1em;
+	}
+	
+	figcaption {
+	  text-align:center;
+      font-weight:bold;
+	  text-transform:uppercase;
+	}
+  </style>
+</head>
+
+<body>
+<div class="ui stackable grid container">
+<header class = "sixteen wide column">
+ <h1>Book a Car</h1>    
+</header>
+<main  class= "ui row">
+ <section class="ui twelve wide column">
+   <h2>Contact Us</h2>
+
+   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+    <div class = "inline field">
+     <label for="contactname" class="three wide field">Name</label>
+     <input type="text" name="contactname" id="contactname" class="eight wide field" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
+     title="Please enter a name (Surname optional) with First Letter capitalised">
+    </div>
+
+   </form>
+     
+     <br>
+     
+   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+    <div class = "inline field">
+     <label for="contactemail" class="three wide field">Email Address</label>
+     <input type="text" name="contactemail" id="contactemail" class="eight wide field" required pattern = "[A-Z][a-z]+@"
+     title="Please enter your email">
+    </div>
+
+   </form>
+     
+   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+     <p>Do you have a license
+     
+         <br><input type="radio" name="licenseyesno" id = "Yes" value="Yes"/>
+         <label for="Yes">Yes</label>
+         <br><input type="radio" name="licenseyesno" id = "No" value="No"/>
+         <label for = "No">No</label>
+       </p>
+     </form>
+     
+     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+         <label for="Age">Age </label>
+         <input type = "Age" name = "" id = "age" min = "17" max = "80" step = "1">
+     </form>
+     
+     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+         <label for="date">Date </label>
+         <input id="date" type="date">
+     </form>
+     
+     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
+         <label for = "cars">Cars</label>
+         <select name="cars">
+             <option value="fordfocus">Ford Focus</option>
+             <option value="hyundi">Hyundai Tucson</option>
+             <option value="toyota">Toyota Rav4</option>
+             <option value="renault">Renault Kadjar</option>
+             <option value="nissan">Nissan Qashqai</option>
+         </select>
+     </form>
+ </section>
+ <section class = "ui four wide column">
+  <figure>
+   <img src = "../../../img/week10/ex1/car.jfif" alt = "Car" class = "ui fluid image">
+   <figcaption>Car Rental</figcaption>
+  </figure>
+ </section>
+</main>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous">
+</script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</body>
+</html>
+

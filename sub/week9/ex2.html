@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <title>Semantic UI Dropdown Exercise</title>
+    <style>
+      .ui.container {
+        margin-top:2em;
+      } 
+    </style>
+</head>
+<body>
+
+<div class = "ui grid container">
+    <div class="ui dropdown menu">
+        <i class="dropdown icon">Favourite Music</i> <br><br>
+        <i class="music icon"></i>
+        <div class="defualt text">FILTER BY BAND</div> <hr>
+        <div class="menu"></div>
+        
+        <div class="item" data-value="U2">
+        <img class="ui mini avatar image" src="../../img/week9/ex2/u2.jpg">
+            U2
+        </div>
+        
+        <div class="item" data-value="ColdPlay">
+        <img class="ui mini avatar image" src="../../img/week9/ex2/col.png">
+            Cold Play
+        </div>
+        
+        <div class="item" data-value="Queen">
+        <img class="ui mini avatar image" src="../../img/week9/ex2/queen.jpg">
+            Queen
+        </div>
+        
+        <div class="item" data-value="TheScript">
+        <img class="ui mini avatar image" src="../../img/week9/ex2/script.jpg">
+            The Scipt
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous">
+</script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+<script>
+  $('.ui.dropdown').dropdown();
+</script>
+</body>
+</html>
+
