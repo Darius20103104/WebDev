@@ -36,56 +36,71 @@
  <section class="ui twelve wide column">
    <h2>Contact Us</h2>
 
-   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-    <div class = "inline field">
+   <form action="process.html" method="get" id = "booking" class="ui form">
+    <div class = "required inline field">
      <label for="contactname" class="three wide field">Name</label>
      <input type="text" name="contactname" id="contactname" class="eight wide field" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
      title="Please enter a name (Surname optional) with First Letter capitalised">
     </div>
-
-   </form>
-     
-     <br>
-     
-   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-    <div class = "inline field">
+       
+       <div class="required inline field">
      <label for="contactemail" class="three wide field">Email Address</label>
-     <input type="text" name="contactemail" id="contactemail" class="eight wide field" required pattern = "[A-Z][a-z]+@"
-     title="Please enter your email">
-    </div>
+     <input type="text" name="contactemail" id="contactemail" class="eight wide field" required pattern = "[A-Z][a-z]+@+( [A-Z][a-z]+)*"
+     title="Please enter an email address">
+       </div>
+       
+       <div class="inline field">
+     <label for="driverlicense" class="field">Do you have a Driver's License</label>
+       </div>
+       
+       <div class="inline field">
+        <input type="radio" name="driverlicense" value="yes" class="one wide field">
+           <label for="driverlicense">Yes</label>
+       </div>
+       
+         <div class="inline field">    
+        <input type="radio" name="driverlicense" value="no" class="one wide field">
+       <label for="driverlicense">No</label>
+       </div>
+       
+       <div class="inline field">
+<label for="age" class="three wide field">Age</label>
+     <input type="number" name="age" id="age" class="eight wide field" min="18" max="80"
+     title="Please enter your age">
+       </div>
+       
+       <div class="required inline field">
+<label for="bookdate" class="three wide field">Age</label>
+     <input type="date" name="bookdate" id="bookdate" class="eight wide field" 
+     title="Please enter the date you want your car">
+       </div>
+       
+       <div class="inline field">
+           <label for="cars" class="three wide field">Car</label>
+       <select name="cars" class="eight wide field">
+           <option value="ff">Ford Focus</option>
+           <option value="ht">Hyundai Tucson</option>
+           <option value="tr">Toyota Rav4</option>
+           <option value="rk">Renault Kadjar</option>
+           <option value="nq">Nissan Qashqai</option>
+        </select>
+       </div>
+       
+       <div class="inline field">
+           <label>Please provide any other deital you think will be useful to us in the text area bbelow (it may save us calling or emailing you, and help aboid delays).</label>
+       </div>
+       
+       <div class="inline field">
+           <label for="more" class="three wide field">More details (as much as you think we'll need!)</label>
+           <input type="text" name="more" class="twelve wide field">
+       </div>
+       
+       <div class="inline field">
+           <button class="ui button primary">Send us the Info</button>
+           <button class="ui button primary">Clear the Info</button>
+       </div>
 
    </form>
-     
-   <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-     <p>Do you have a license
-     
-         <br><input type="radio" name="licenseyesno" id = "Yes" value="Yes"/>
-         <label for="Yes">Yes</label>
-         <br><input type="radio" name="licenseyesno" id = "No" value="No"/>
-         <label for = "No">No</label>
-       </p>
-     </form>
-     
-     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-         <label for="Age">Age </label>
-         <input type = "Age" name = "" id = "age" min = "17" max = "80" step = "1">
-     </form>
-     
-     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-         <label for="date">Date </label>
-         <input id="date" type="date">
-     </form>
-     
-     <form action="../../../sub/week10/ex1/process.html" method="get" id = "booking" class="ui form">
-         <label for = "cars">Cars</label>
-         <select name="cars">
-             <option value="fordfocus">Ford Focus</option>
-             <option value="hyundi">Hyundai Tucson</option>
-             <option value="toyota">Toyota Rav4</option>
-             <option value="renault">Renault Kadjar</option>
-             <option value="nissan">Nissan Qashqai</option>
-         </select>
-     </form>
  </section>
  <section class = "ui four wide column">
   <figure>

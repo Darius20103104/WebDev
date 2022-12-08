@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>Car Booking</title>
+  <style>
+  .ui.container {
+    border: solid black 1px;
+	margin-top:2em;
+	}
+	
+	h1, h2, figcaption {
+	   color: blue;
+	}
+	
+	.ui.form .inline.field > label, .ui.form .field  label, p {
+	  color: #0384fc;
+	  font-size:1.1em;
+	}
+	
+	figcaption {
+	  text-align:center;
+      font-weight:bold;
+	  text-transform:uppercase;
+	}
+
+form#booking input[type="text"]:valid,   form#booking input[type="date"]:valid, form#booking input[type="email"]:valid {
+    color: green;
+}
+
+/* Unmatched */
+form#booking input[type="text"]:invalid, form#booking input[type="date"]:invalid, form#booking input[type="email"]:invalid {
+    color: red;
+    border-color:red;
+}
+	
+
+    </style>
+</head>
+
+<body>
+<div class="ui stackable grid container">
+
+<header class = "sixteen wide column">
+
+      <h1>Book a Car</h1>    
+</header>
+<main  class= "ui row">
+<section class="ui twelve wide column">
+
+    <h2>Contact Us</h2>
+
+<form action="process.html" method="get" id = "booking" class="ui form">
+
+
+<div class = "inline field">
+    <label for="contactname" class="three wide field">Name</label>
+     <input type="text" name="contactname" id="contactname" class="eight wide field" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
+     title="Please enter a name (Surname optional) with First Letter capitalised">
+</div>
+
+
+<div class = "inline field">
+    <label for="email" class="ui three wide field">Email Address</label>
+     <input type="email" name="email" id="email" class="ui eight wide field" required  pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+     title="Please enter a valid email">
+</div>
+
+ <p>Do you have a Driver's Licence</p>
+<div class="grouped fields">
+      <div class="field">
+        <div class="ui radio checkbox">
+		  <input type="radio" name="licence" id="yes" value="Yes" checked="checked">
+          <label for = "yes" >Yes</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+		  <input type="radio" name="licence" id="no" value="No">
+          <label for = "no" >No</label>
+        </div>
+      </div>
+ </div>
+
+<div class = "inline field">
+    <label for="age" class="ui three wide field">Age</label>
+     <input type="number" name="age" id="age" class="ui eight wide field" min = "17" max = "80" required 
+     title="Please enter a valid age">
+</div>
+
+<div class = "inline field">
+    <label for="eventdate" class="ui three wide field">Booking Date</label>
+     <input type="date" name="eventdate" id="eventdate" class="ui eight wide field" required title="Please select a date">
+</div>
+
+<div class = "inline field">
+   <label for="region" class="ui three wide field">Car</label>
+    <select name="car" id="car" class="ui eight wide field" >
+        <option value ="Ford">Ford Focus</option>
+        <option value ="Hyundai">Hyundai Tucson</option>
+        <option value ="Toyota">Toyota Rav4</option>
+        <option value ="Renault">Renault Kadjar</option>
+        <option value ="Nissan">Nissan Qashqai</option>
+    </select>
+</div>
+
+
+  <p>Please provide any other details you think will be useful to us in the text area below
+  (it may save us calling or emailing you, and help avoid delays).</p>
+  <div class = "inline field">
+  <label for="details" class="ui three wide field">More details (as much as you think we'll need!)</label>
+  <textarea name="details" id="details" cols="30" rows="7"  class="ui twelve wide field"></textarea>
+</div>
+
+  
+
+<button class="ui primary button" type="submit">Send Us the Info</button>
+        <button class="ui primary button" type="reset">Clear the Info</button>
+
+</form>
+</section>
+<section class = "ui four wide column">
+<figure>
+ <img src = "images/car.jfif" alt = "Car" class = "ui fluid image">
+ <figcaption>Car Rental</figcaption>
+</figure>
+</section>
+</main>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+		crossorigin="anonymous">
+</script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+</body>
+</html>
+
