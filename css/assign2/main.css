@@ -1,0 +1,68 @@
+      body {
+          background-image: url('../../img/assign2/golfball.avif');
+          background-color: forestgreen;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          z-index: -1;
+      }
+      
+   #whiteback {
+    background-color: rgba(255,255,255,.45);
+    position: absolute;
+    left:12.5%;
+    width: 75%;
+    height: 150%;
+    filter: blur(20px);
+    z-index: -2;
+}
+   #nicetitle {
+    background-color: rgba(200,255,200,.5);
+    position: absolute;
+    left:16%;
+    width: 68%;
+    height: 27%;
+    filter: blur(50px);
+    z-index: -2;
+}
+      
+.ui.secondary.buttons .button,
+.ui.secondary.button {
+  background-color: transparent; !important
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+      
+.ui.secondary.buttons .button:hover,
+.ui.secondary.button:hover {
+  background-color: lightgrey;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+      h1,p {
+          text-align: center;
+          font-size: 150%;
+      }
+      body div h1{
+          font-size: 350%;
+      }
+      
+      .twinpic {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; 
+}
+
+#images{
+    text-align:center;
+}
+
+.reading {
+    font-size: 125%;
+}
+
+input[name="info"] {
+    height: 200px;
+}
